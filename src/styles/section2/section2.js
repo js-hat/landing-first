@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-import {Style2} from "../responsive-lib";
+import {Style2} from "../../responsive-lib";
 
 export const section2 = new Style2('section2')
     .addMediaQuery({orientation: "portrait"}, {

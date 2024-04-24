@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { typoghraphy} from "./styles/typoghraphy";
+import { typoghraphy} from "./styles/global/typoghraphy";
 import {section1} from "./section1";
 import {section2} from "./section2";
 import {section4} from "./section4";
