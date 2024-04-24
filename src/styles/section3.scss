@@ -1,0 +1,118 @@
+.section-wrapper3 {
+
+    .section {
+        background-color: #0A0B20;
+        
+        .content-container {
+            width: 100%;
+            height: 100%;
+            border: 0px solid white;
+            display: flex;
+            align-items: center;
+            padding-top: 35px;
+            .left, .right {
+                width: 50%;
+                height: 84%;
+                border: 0px solid white;
+            }
+            .left {
+                position: relative;
+                .img-container {
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    .img {
+                        width: 100%;
+                        height: 100%;
+                        background-image: url(https://ann.axiomthemes.com/wp-content/uploads/2023/03/img_113.jpg);
+                        background-position: center center;
+                        background-size: cover;
+                        animation: scale 15s ease infinite;
+                    }
+                    
+                }
+                .codeLines {
+                    box-sizing: border-box;
+                    background-color: blue;
+                    position: absolute;
+
+
+                    box-shadow: 0px 0px 40px 12px rgba(0, 0, 0, 0.05);
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    h1, p, span {
+                        text-align: left;
+                    }
+                    p {
+                        font-weight: 600;
+                    }
+
+
+                }
+                .codeLines.light {
+                    bottom: 4vh;
+
+                    position: absolute;
+                    background-color: #6600FF;
+                }
+                .codeLines.dark {
+                    bottom: 4vh;
+                    right: -2.5vw;
+                    position: absolute;
+                    background-color: #0D111A;
+                }
+            }
+            .right {
+
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                > p, > h2 {
+                    text-align: left;
+                }
+
+                .list {
+                    width: 100%;
+                    .item {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                        padding: 25px 0;
+                        cursor: pointer;
+
+
+                        p {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+
+            
+                        }
+                    }
+                    .line {
+
+                        height: 1px;
+                        border-top: 1px solid #2A2E36;
+
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes scale {
+    0% {
+        scale: 1;
+    }
+    50% {
+        scale: 1.1;  
+    }
+    100% {
+        scale: 1;
+    }
+
+}
