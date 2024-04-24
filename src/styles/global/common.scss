@@ -10,7 +10,7 @@ body {
         max-width: 100%;
         overflow: auto;
         overflow-x: hidden;
-
+        position: relative;
         .section-wrapper {
             width: 100vw;
             position: relative;
@@ -53,6 +53,26 @@ body {
         text-transform: capitalize;
 
 
+    }
+    .bgs {
+        width: 100vw;
+        height: 4200px;
+        position: absolute;
+        top: 367vh;
+        left: 0;
+        background-image: url("https://ann.axiomthemes.com/splash/src/img/wrap-bg.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .bgs2 {
+        width: 100vw;
+        height: 4200px;
+        position: absolute;
+        top: calc(367vh + 4200px);
+        left: 0;
+        background-image: url("https://ann.axiomthemes.com/splash/src/img/wrap-bg.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
 }
 

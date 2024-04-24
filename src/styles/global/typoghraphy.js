@@ -16,6 +16,9 @@ export const typography = new Style2('typography')
         ".h5-js": {
             fontSize: "52px"
         },
+        ".h4-js": {
+            fontSize: "24px"
+        },
         ".p-js": {
             fontSize: "18px"
         },

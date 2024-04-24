@@ -18,6 +18,8 @@ import {section2} from "./styles/section2/section2";
 import {section3} from "./styles/section3/section3";
 import {heroAnimation} from "./animation/section1.js"
 import {section7} from "./styles/section7/section7"
+import {section4} from "./styles/section4/section4"
+
 console.log("privat");
 
 heroAnimation()
@@ -30,7 +32,8 @@ export const createStyles = () => {
         section1,
         section2,
         section3,
-        section7
+        section7,
+        section4
     }
 }
 createStyles();
