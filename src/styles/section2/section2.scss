@@ -1,11 +1,11 @@
 .section-wrapper2 {
 
     .section {
-
+        height: max-content!important;
         .content-container {
             width: 100%;
-            height: 100vh;
-            padding: 15vw 0;
+            height: max-content!important;
+
             display: flex;
             justify-content: center;
             align-items: center;
@@ -54,26 +54,38 @@
 
             .right {
                 position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 img {
-                    width: 35vh;
-                    height: 35vh;
-                    position: absolute;
+
+                    position: relative;
                     object-fit: cover;
                 }
                 img:nth-child(1) {
-                    right: 2vw;
-                    top: 2vh;
+                    left: 15%;
+                    top: 25%;
+                    z-index: 2;
                 }
                 img:nth-child(2) {
-                    left: 4vw;
+                    top: -10%;
                     bottom: 0vh;
                 }
-                .codeLines {
-
-                    box-sizing: border-box;
+                .banner-container {
                     position: absolute;
-                    top: 20vh;
-                    left: -3vw;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+
+
+                }
+                .codeLines {
+                    width: max-content;
+                    box-sizing: border-box;
+                    position: relative;
+                    z-index: 3;
+
 
                     background-color: #6600FF;
                     box-shadow: 0px 0px 40px 12px rgba(0, 0, 0, 0.05);
@@ -81,6 +93,115 @@
                     h2, p {
                         font-weight: 700;
                         text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (orientation: portrait) {
+    .section-wrapper2 {
+
+        .section {
+            height: max-content!important;
+            .content-container {
+                width: 100%;
+                height: max-content!important;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+                border: 0px solid white;
+                flex-wrap: wrap;
+
+                .left, .right {
+                    border: 0px solid white;
+
+                }
+
+                .left {
+                    width: max-content;
+                    height: max-content;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 0 30px;
+
+                    > p, h2 {
+                        text-align: left;
+
+
+                    }
+
+                    .list {
+                        width: 100%;
+                        .item {
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+                            padding: 10px 0;
+
+                            .line {
+                                width: 30px;
+                                max-width: 30px;
+                                min-width: 30px;
+                                height: 1px;
+                                border-top: 2px solid #2A2E36;
+
+                            }
+                            p {
+
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+
+                .right {
+
+                    width: 100%;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 4vw;
+                    img {
+                        position: static;
+                        object-fit: cover;
+                    }
+                    img:nth-child(1) {
+                        right: 50%;
+                        top: 2vh;
+                    }
+                    img:nth-child(2) {
+                        left: 50%;
+                        top: 2vh;
+                    }
+                    .banner-container {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                    }
+                    .codeLines {
+
+                        box-sizing: border-box;
+                        position: static;
+
+                        width: max-content;
+
+                        background-color: #6600FF;
+                        box-shadow: 0px 0px 40px 12px rgba(0, 0, 0, 0.05);
+
+                        h2, p {
+                            font-weight: 700;
+                            text-align: left;
+                        }
                     }
                 }
             }

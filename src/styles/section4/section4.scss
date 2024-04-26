@@ -60,3 +60,69 @@
         }
     }
 }
+
+@media (orientation: portrait) {
+    .section-wrapper4 {
+
+        .section {
+            height: max-content!important;
+            .content-container {
+                width: 100%;
+                height: max-content;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2vh;
+
+                .types {
+                    margin-top: 1vh;
+
+                    border: 0px solid white;
+                    display: flex;
+                    justify-content: center;
+                    gap: 2.5vw;
+
+
+
+                    .type {
+                        width: 30%;
+                        border: 0px solid white;
+                        height: 100%;
+                        opacity: 0.9;
+                        display: flex;
+                        align-items: flex-end;
+                        box-sizing: border-box;
+                        justify-content: center;
+                        cursor: pointer;
+
+                        h4 {
+                            position: relative;
+
+
+                        }
+
+                    }
+                    .type:nth-child(1) {
+                        background-image: url("../../../public/media/images/website.png");
+                        background-size: cover;
+
+                    }
+                    .type:nth-child(2) {
+                        background-image: url("../../../public/media/images/application.png");
+                        background-size: cover;
+
+                    }
+                    .type:nth-child(3) {
+                        background-image: url("../../../public/media/images/platform.png");
+                        background-size: cover;
+
+                    }
+
+                }
+
+            }
+        }
+    }
+
+}

@@ -24,8 +24,11 @@ class Observable {
         this.subscribers = [];
         this.scaleFactors = {
             portrait: [
-                {f: 1, min: 0, max: 600},
-                {f: .7, min: 600, max: 5000},
+                {f: 1, min: 0, max: 500},
+                {f: 0.8, min: 500, max: 600},
+                {f: 0.6, min: 600, max: 700},
+                {f: 0.4, min: 700, max: 800},
+                {f: 0.7, min: 800, max: 50000},
             ],
             landscape: [
                 {f: 1, min: 0, max: 1200},

@@ -2,7 +2,8 @@
     height: 4000px;
 
     .section1 {
-
+        height: 100vh;
+        padding: 0;
         &::before {
             content: '';
             position: absolute;
@@ -187,7 +188,6 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    gap: 50px;
 
                     h2 {
 
@@ -270,20 +270,17 @@
                 .service:nth-child(5) {
                     right: 44%;
                     bottom: 28%;
-                    width: 80px;
-                    height: 80px;
+
                 }
                 .service:nth-child(6) {
                     left: 7%;
                     bottom: 26%;
-                    width: 150px;
-                    height: 150px;
+
                 }
                 .service:nth-child(7) {
                     right: 4%;
                     bottom: 36%;
-                    width: 150px;
-                    height: 150px;
+
                 }
             }
         }
@@ -313,6 +310,88 @@
 
     }
 }
+
+@media (orientation: portrait) {
+    .section-wrapper1 {
+        height: 4000px;
+
+        .section1 {
+
+
+            .lines {
+                width: 383vw;
+                top: 0;
+
+            }
+
+            .circle-container {
+                top: 0;
+
+                h1 {
+                    z-index: 2;
+                    margin-top: 2vh;
+                }
+
+                p {
+                    display: none;
+                    z-index: 2;
+
+                }
+
+            }
+            .internal-container {
+                width: 200vh;
+                position: absolute;
+                height: 100%;
+                max-width: 100vw;
+
+                .services {
+
+                    display: flex;
+                    justify-content: center;
+
+                    .title {
+                        margin-top: 13vh;
+                        top: 30%;
+                        scale: 0;
+                    }
+
+                    .service:nth-child(1) {
+                        left: 5%;
+                        top: 10%;
+                    }
+                    .service:nth-child(2) {
+                        right: 5%;
+                        top: 10%;
+                    }
+                    .service:nth-child(3) {
+                        left: 5%;
+                        bottom: 8%;
+                    }
+                    .service:nth-child(4) {
+                        right: 5%;
+                        bottom: 8%;
+                    }
+                    .service:nth-child(5) {
+                        right: 40%;
+                        top: 26%;
+
+                    }
+                    .service:nth-child(6) {
+                        left: 39%;
+                        bottom: 26%;
+                    }
+                    .service:nth-child(7) {
+                        display: none;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
 
 @keyframes moveLine {
     0% {

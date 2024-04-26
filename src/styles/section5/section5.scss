@@ -48,6 +48,7 @@
 
                         }
                     }
+
                 }
             }
             .right {
@@ -62,6 +63,99 @@
 
                 }
              
+            }
+        }
+    }
+}
+@media (orientation: landscape) {
+    .section-wrapper5 .section .content-container .left .list lottie-player {
+        display: none;
+    }
+}
+@media (orientation: portrait) {
+    .section-wrapper5 {
+
+        .section {
+            box-sizing: border-box;
+            height: max-content!important;
+            .content-container {
+
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                height: max-content!important;
+
+                padding-left: 0%;
+                box-sizing: border-box;
+                position: relative;
+                .left, .right {
+
+                    position: relative;
+                    border: 0px solid white;
+                }
+                .left {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 0vh;
+                    h2 {
+                        padding: 20px 0;
+                        text-align: left;
+                    }
+                    min-height: max-content;
+
+                    .list {
+                        width: 60%;
+                        height: 30vh;
+                        min-height: max-content;
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        .item {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            padding: 10px 0;
+
+                            .line {
+                                width: 20px;
+                                max-width: 20px;
+                                min-width: 20px;
+                                height: 1px;
+                                border-top: 2px solid #2A2E36;
+
+                            }
+                            p {
+
+                            text-align: left;
+                            }
+                        }
+                        .lottie-container {
+                            width: 38%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            right: -28vw;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            lottie-player {
+                                position: static;
+                                min-width: 45vw;
+                                min-height: 60vw;
+                            }
+                        }
+
+                    }
+                }
+                .right {
+                    display: none;
+
+                }
             }
         }
     }

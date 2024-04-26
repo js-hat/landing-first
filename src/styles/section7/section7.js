@@ -5,7 +5,29 @@ import {Style2} from "../../responsive-lib";
 
 export const section7 = new Style2('section7')
     .addMediaQuery({orientation: "portrait"}, {
-
+        ".section7 .content-container .left img": {
+            bottom: "5px"
+        },
+        ".section7 .content-container .right": {
+            paddingLeft: "0px",
+            marginTop: "30px"
+        },
+        ".section7 .content-container .right > p": {
+            padding: "10px 0"
+        },
+        ".section7 .content-container .right .list": {
+            gap: "10px"
+        },
+        ".section7 .content-container .right .list .item": {
+            gap: "10px"
+        },
+        ".section7 .content-container .right .list .item .img-container": {
+            width: "40px",
+            height: "40px"
+        },
+        ".section7 .content-container .right .list .item .content": {
+            height: "50px"
+        }
     })
     .addMediaQuery({orientation: "landscape"}, {
         ".section7 .content-container .left img": {

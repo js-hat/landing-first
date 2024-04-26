@@ -27,7 +27,7 @@ export const heroAnimation = () => {
     });
     
     timeline.to(circleContainer, {  width: "0vh", height: "0vh",  duration: 1 }, 0);
-    timeline.to(titleServices, {   top: "28%",  duration: 1 }, 0.5);
+    timeline.to(titleServices, {   top: "28%", scale: 1,  duration: 1 }, 0.5);
 
     services.forEach((service, i) => {
     	timeline.to(service, {  scale: 1,  duration: 1 }, 0 + i * 0.25);

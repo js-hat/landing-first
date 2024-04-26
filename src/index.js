@@ -19,6 +19,8 @@ import {section3} from "./styles/section3/section3";
 import {heroAnimation} from "./animation/section1.js"
 import {section7} from "./styles/section7/section7"
 import {section4} from "./styles/section4/section4"
+import {section5} from "./styles/section5/section5"
+
 import {section6} from "./styles/section6/section6"
 console.log("privat");
 
@@ -33,6 +35,7 @@ export const createStyles = () => {
         section2,
         section3,
         section4,
+        section5,
         section6,
         section7
     }
