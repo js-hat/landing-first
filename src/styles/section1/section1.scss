@@ -4,6 +4,7 @@
     .section1 {
         height: 100vh;
         padding: 0;
+        padding-top: 0!important;
         &::before {
             content: '';
             position: absolute;
@@ -111,7 +112,7 @@
         .circle-container {
             position: relative;
 
-            top: -17vh;
+
             display: flex;
             justify-content: center;
             align-items: center;
@@ -130,7 +131,7 @@
             }
             h1 {
                 z-index: 2;
-                margin-top: 200px;
+
                 min-width: 120vh;
 
                 span.highlight {
@@ -182,7 +183,7 @@
                 justify-content: center;
 
                 .title {
-                    margin-top: -79px;
+                    margin-top: -10vh;
                     position: absolute;
                     top: -30%;
                     display: flex;
@@ -313,7 +314,7 @@
 
 @media (orientation: portrait) {
     .section-wrapper1 {
-        height: 4000px;
+        height: 2000px;
 
         .section1 {
 
@@ -333,7 +334,8 @@
                 }
 
                 p {
-                    display: none;
+
+
                     z-index: 2;
 
                 }
@@ -351,33 +353,34 @@
                     justify-content: center;
 
                     .title {
-                        margin-top: 13vh;
+                        margin-top: 9vh;
                         top: 30%;
                         scale: 0;
                     }
 
                     .service:nth-child(1) {
                         left: 5%;
-                        top: 10%;
+                        top: 8%;
                     }
                     .service:nth-child(2) {
                         right: 5%;
-                        top: 10%;
+                        top: 8%;
                     }
                     .service:nth-child(3) {
                         left: 5%;
-                        bottom: 8%;
+                        bottom: 10%;
                     }
                     .service:nth-child(4) {
                         right: 5%;
-                        bottom: 8%;
+                        bottom: 10%;
                     }
                     .service:nth-child(5) {
                         right: 40%;
                         top: 26%;
-
+                        display: none;
                     }
                     .service:nth-child(6) {
+                        display: none;
                         left: 39%;
                         bottom: 26%;
                     }

@@ -11,10 +11,20 @@ header {
     justify-content: center;
 
     .header-container {
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-
+        box-sizing: border-box;
+        min-width: 80vw;
+        .logo {
+            height: 100%;
+            img {
+                object-fit: contain;
+                height: 100%;
+                width: 100%;
+            }
+        }
         .menu {
             flex-grow: 1;
             display: flex;

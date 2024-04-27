@@ -6,7 +6,7 @@ import {Style2} from "../../responsive-lib";
 export const section1 = new Style2('section1')
     .addMediaQuery({orientation: "portrait"}, {
         ".section1 .circle-container": {
-            gap: "32px",
+            gap: "18px",
             width: "375px",
             height: "375px",
             top: "675px"
@@ -32,12 +32,19 @@ export const section1 = new Style2('section1')
         ".section1 .services .title": {
             gap: "20px"
         },
+        ".section1 .circle-container p ": {
+            fontSize: "10px",
+            maxWidth: "290px",
+            minWidth: "290px"
+        },
+
     })
     .addMediaQuery({orientation: "landscape"}, {
         ".section1 .circle-container": {
             gap: "32px",
             width: "950px",
             height: "950px",
+            bottom: "120px"
         },
         ".section1 .circle-container h1": {
             width: "950px"
@@ -63,6 +70,9 @@ export const section1 = new Style2('section1')
         ".section1 .services .title": {
             gap: "50px"
         },
+        ".section1 .circle-container h1 ": {
+            marginTop: "150px"
+        }
 
 
     })

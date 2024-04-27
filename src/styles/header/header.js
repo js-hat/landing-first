@@ -10,10 +10,10 @@ export const header = new Style2('header')
         },
 
         "header .header-container": {
-            width: "330px"
+            width: "330px",
         },
         "header .header-container .logo": {
-            width: "80px"
+            width: "40px"
         },
         "header .header-container .menu": {
             gap: "20px"
@@ -21,14 +21,15 @@ export const header = new Style2('header')
     })
     .addMediaQuery({orientation: "landscape"}, {
         "header": {
-            paddingTop: "20px"
+            paddingTop: "20px",
+            height: "60px"
         },
 
         "header .header-container": {
             width: "1300px"
         },
         "header .header-container .logo": {
-            width: "140px"
+            width: "140px",
         },
         "header .header-container .menu": {
             gap: "20px"

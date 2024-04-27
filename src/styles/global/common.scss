@@ -24,7 +24,7 @@ body {
                 display: flex;
                 justify-content: center;
                 overflow: hidden;
-                padding-top: 10vh ;
+                padding-top: 20vh ;
             }
 
         }
@@ -56,8 +56,6 @@ body {
         width: max-content;
         cursor: pointer;
 
-
-
     }
     .bgs {
         width: 100vw;
@@ -84,4 +82,11 @@ body {
 
 
 
-
+@media (orientation: portrait) {
+    .button-rect {
+        border-radius: 4px!important;
+    }
+    .section {
+        padding-top: 12vh!important;
+    }
+}

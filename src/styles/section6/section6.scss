@@ -3,7 +3,7 @@
     .section {
         padding-top: 100px;
         box-sizing: border-box;
-       
+        height: max-content!important;
         .content-container {
             display: flex;
             border: 0px solid white;
@@ -24,7 +24,6 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    gap: 30px;
                     > p.first {
                         text-align: left;
 
@@ -55,7 +54,7 @@
                     div {
                         background-color: #292933;
                         cursor: pointer;
-                        padding: 2.4em 2.2em;
+
                         box-sizing: border-box;
                         display: flex;
                         flex-direction: column;
@@ -73,14 +72,9 @@
 
                         }
 
-                        h4 {
+                        h4,p {
 
-                            padding: 10px 0;
-                            text-align: left;
-                        }
-                        p {
 
-                            padding: 10px 0;
                             text-align: left;
                         }
                     }
@@ -90,6 +84,102 @@
                     top: 25px;
 
 
+                }
+            }
+        }
+    }
+}
+@media (orientation: portrait) {
+    .section-wrapper6 {
+
+        .section {
+            padding-top: 100px;
+            box-sizing: border-box;
+            height: max-content!important;
+            .content-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                border: 0px solid white;
+
+                > .left, > .right {
+                    width: 90%;
+                    height: max-content;
+                    border: 0px solid red;
+                }
+                > .left {
+                    display: flex;
+
+                    justify-content: center;
+                    .container {
+                        border: 0px solid white;
+                        width: 60%;
+                        min-width: max-content;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        > p.first {
+                            text-align: left;
+
+                        }
+
+                        h2 {
+                            text-align: left;
+
+                        }
+                        p.second {
+                            text-align: left;
+
+
+                        }
+                    }
+
+
+                }
+                > .right {
+                    display: flex;
+                    gap: 25px;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 2vh 0;
+                    .left, .right {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 25px;
+                        div {
+                            background-color: #292933;
+                            cursor: pointer;
+                            box-sizing: border-box;
+                            display: flex;
+                            flex-direction: column;
+
+                            &:hover {
+                                background-color: #3A98C9;
+                                i {
+                                    color: #FDFDFD;
+                                }
+                            }
+
+                            i  {
+                                color: #3A98C9;
+                                flex-grow: 1;
+
+                            }
+
+                            h4, p {
+
+                                text-align: left;
+                            }
+                        }
+                    }
+                    .left {
+                        position: relative;
+                        top: 25px;
+
+
+                    }
                 }
             }
         }

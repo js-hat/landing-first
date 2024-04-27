@@ -9,8 +9,8 @@ export const common = new Style2('common')
             fontSize: "12px",
         },
         ".button-rect": {
-            padding: "5px 13px",
-            fontSize: "12px",
+            padding: "7px 10px",
+            fontSize: "10px",
         },
     })
     .addMediaQuery({orientation: "landscape"}, {
