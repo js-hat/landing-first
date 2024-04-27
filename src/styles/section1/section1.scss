@@ -126,7 +126,8 @@
                 width: 100%;
                 object-fit: cover;
                 position: absolute;
-                top: 0;
+                top: -100%;
+                scale: 0;
                 left: 0;
             }
             h1 {
@@ -327,6 +328,7 @@
 
             .circle-container {
                 top: 0;
+                overflow: hidden;
 
                 h1 {
                     z-index: 2;
