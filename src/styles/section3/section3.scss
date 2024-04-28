@@ -1,7 +1,7 @@
 .section-wrapper3 {
 
     .section {
-
+        height: 120vh!important;
         .content-container {
             width: 100%;
             height: 100%;
@@ -76,6 +76,10 @@
 
                 .list {
                     width: 100%;
+                    > * {
+                        position: relative;
+                        top: 3vh;
+                    }
                     .item {
                         display: flex;
                         align-items: center;

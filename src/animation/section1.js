@@ -84,7 +84,20 @@ export const heroAnimation = () => {
         right: "0%",
         top: "-10%"
     });
-
+    document.querySelectorAll(".section3 .content-container .right .list > div").forEach((item, i) => {
+        gsap.to(`.section3 .content-container .right .list > div:nth-child(${i+1})`, {
+            scrollTrigger: {
+                scroller: ".main",
+                trigger: `.section3 .content-container .right .list > div:nth-child(${i+1})`,
+                start: "top bottom", // Анимация начнется, когда верх триггер-элемента достигнет нижней части вьюпорта
+                end: "top bottom", // Анимация закончится, когда нижняя часть триггер-элемента покинет верх вьюпорта
+                markers: false, // Показывает маркеры для отладки
+                toggleActions: "play none none none" // Определяет, что делать в моменты start, end, и так далее
+            },
+            top: 0,
+            duration: .6
+        });
+    })
 
 
 
